@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body onload="renderListCustomer()" >
+  <div class="main">
+    <div class="row">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-4 info">
+        <div class="heading">
+          nhập thông tin xe cộ
+        </div>
+        <div class="content">
+          Tên Xe<span>*</span>: <span id="name-error"></span><br> 
+          <input id="name" class="child-content" type="text">
+          
+          Hình Ảnh: <br> 
+          <input id="img" class="child-content" type="input"><br>
+          Hãng Xe<span>*</span>: <span id="brand-error"></span><br> 
+          <select class="child-content" name="cars" id="brand">
+            <option selected  style="display: none;">--Hãng Xe--</option>
+            <optgroup label="Swedish Cars">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+            </optgroup>
+            <optgroup label="German Cars">
+              <option value="mercedes">Mercedes</option>
+              <option value="audi">Audi</option>
+            </optgroup>
+          </select> <br>
+          Giá Tiền<span>*</span>: <span id="cost-error"></span><br> 
+          <input id="cost" class="child-content" type="number" > <br>
+          Mô Tả: <br> 
+          <textarea class="child-content" name="" id="discription" cols="30" rows="5"></textarea> <br>
+          Người liên hệ<span>*</span>: <span id="contact-error"></span><br> 
+          <input id="contact" class="child-content" type="text"> 
+          Số điện thoại người liên hệ<span>*</span>: <span id="phone-error"></span><br> 
+          <input id="phonenumber" class="child-content" type="text">
+      
+          Email<span>*</span>: <span id="email-error"></span><br> 
+          <input id="email" class="child-content" type="email"> <br>
+          
+          <button onclick="save()" class="submit save" id="luu">lưu</button>
+          <button onclick="delet()" class="submit delete" id="xoa">xóa</button>
+
+        </div>
+    </div>
+
+      <div class="col-lg-7 manage">
+        <div class="heading">quản lý danh sách xe cộ</div> 
+        <input 
+        class="search" 
+        name="searchBar" 
+        id="searchBar"
+        type="text"
+        placeholder="  Tìm kiếm ..."> <br>
+        <table class="table" id="grid-view">
+          <tr id="tr">
+            <td class="td">STT</td> 
+            <td class="td">Hình Ảnh</td> 
+            <td class="td">Tên Xe</td> 
+            <td class="td">Hãng Xe</td> 
+            <td class="td">Giá Tiền</td> 
+            <td class="td">Người Liên Hệ</td> 
+            <td class="td">Điện Thoại</td> 
+            <td class="td">Email</td> 
+          </tr>
+        </table>
+
+
+      </div>
+      <!-- <div class="col-lg-1"></div> -->
+    </div>
+  </div>
+
+  
+  
+        
+      
+  
+    
+    <script src="app.js"></script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+</body>
+</html>

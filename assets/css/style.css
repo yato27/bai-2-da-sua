@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.main{
+    margin-top: 20px;
+
+}
+
+.info{
+    border: 1px solid gray;
+    padding: 0px !important;
+    border-radius: 3px;
+    box-sizing: border-box !important;
+}
+
+ .heading{
+    background-color: darkcyan;
+    padding: 7px 15px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    
+    
+}
+
+.info .content{
+    width: 90%;
+    margin: 15px;
+    font-weight: 500;
+}
+
+.info .content .child-content{
+    width: 100%;
+    margin-bottom: 8px ;
+    
+}
+
+.content #brand {
+    padding: 3px;
+}
+
+.content .submit{
+    padding: 2px 10px;
+    border-radius: 3px;
+    border: 0px !important;
+    margin-top: 3px;
+}
+
+.content  .save{
+    background-color: rgb(50, 146, 26);
+    color: white;
+}
+
+.content  .delete{
+    background-color: rgb(255, 212, 102);
+}
+
+.content  span{
+    color: red;
+}
+
+.manage{
+}
+
+.manage .search{
+    width: 90%;
+    margin-top:7px ;
+}
+
+.manage .table{
+    width: 100%;
+    margin-top: 5px;
+   
+    
+}
+
+.manage .table .td {
+    border:1px solid black ;
+    
+}
+ .manage .heading {
+     width: 90%;
+ }
